@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/banner.png" alt="IPL Match Winner Predictor">
+  <img src="banner.png" alt="IPL Match Winner Predictor">
 </p>
 
 <h1 align="center">🏏 IPL Match Winner Predictor</h1>
