@@ -2,57 +2,75 @@
   <img src="banner.png" alt="IPL Match Winner Predictor">
 </p>
 
+<h1 align="center">🏏 IPL Match Winner Predictor</h1>
 
-## 📌 Project Overview
+<p align="center">
+Predict IPL match winners using Machine Learning and an interactive Streamlit web application.
+</p>
 
-This project predicts the winner of an IPL match using a **Random Forest Classifier** trained on historical IPL match data (2008–2016).
-
-The application allows users to select:
-
-- Season
-- City
-- Team 1
-- Team 2
-- Toss Winner
-- Toss Decision
-
-and returns:
-
-- 🏆 Predicted Winner
-- 📊 Winning Probability for both teams
-- 📈 Model Information
-
-The machine learning workflow was built using **Scikit-Learn Pipelines**, while the prediction interface is implemented using **Streamlit**.
+<p align="center">
+<a href="https://ipl-match-prediction-model.streamlit.app"><img src="https://img.shields.io/badge/🚀%20Live%20Demo-Open%20App-success?style=for-the-badge" alt="Live Demo"></a>
+</p>
 
 ---
 
-## Demo
+##  Project Overview
+
+This project predicts the winner of an IPL match using a **Random Forest Classifier** trained on historical IPL match data (2008–2016).
+
+Users can select:
+
+- 🏏 Season
+- 📍 City
+- 👥 Team 1 & Team 2
+- 🪙 Toss Winner
+- 🎯 Toss Decision
+
+The application then predicts:
+
+- 🏆 Match Winner
+- 📊 Winning Probability of both teams
+- 📈 Model Information
+
+The machine learning workflow was built using **Scikit-Learn Pipelines**, while the prediction interface is deployed as a **Streamlit web application**.
+
+---
+
+# 🌐 Live Demo
+
+### 🚀 Try it here
+
+https://ipl-match-prediction-model.streamlit.app
+
+---
+
+## 📷 Application Preview
 
 ![Application Screenshot](screenshot.png)
 
 ---
 
-## Features
+##  Features
 
-- Interactive Streamlit web application
-- Random Forest prediction model
-- Winning probability visualization
-- Prediction history
-- Input validation
-- Dark-themed responsive UI
-- Automatic preprocessing using Scikit-Learn Pipeline
-- Model information panel
+- 🌐 Live deployed Streamlit application
+- 🏏 IPL match winner prediction
+- 📊 Winning probability visualization
+- 📝 Prediction history
+- ✅ Input validation
+- 🌙 Modern dark-themed UI
+- ⚙️ Scikit-Learn preprocessing pipeline
+- 📈 Model information panel
 
 ---
 
-##  Dataset
+## 📊 Dataset
 
 - **Source:** IPL Matches Dataset
 - **Matches:** 577
 - **Usable Matches:** 567
 - **Seasons:** 2008–2016
 
-The following input features are used:
+### Input Features
 
 - Season
 - City
@@ -61,7 +79,7 @@ The following input features are used:
 - Toss Winner
 - Toss Decision
 
-Target:
+### Target
 
 - Match Winner
 
@@ -69,36 +87,46 @@ Target:
 
 ## 🤖 Machine Learning Workflow
 
-```
+```text
 Dataset
-      │
-      ▼
+   │
+   ▼
 Data Cleaning
-      │
-      ▼
+   │
+   ▼
 Feature Selection
-      │
-      ▼
-Train-Test Split
-      │
-      ▼
+   │
+   ▼
+Train/Test Split
+   │
+   ▼
 ColumnTransformer
-      │
-      ▼
+   │
+   ▼
 OneHotEncoder
-      │
-      ▼
+   │
+   ▼
 Random Forest Classifier
-      │
-      ▼
+   │
+   ▼
 Prediction
 ```
 
 ---
 
-##  Model Comparison
-<>
----![model_comparison](model_comparison.png)
+## 📈 Model Performance
+
+### Model Comparison
+
+![Model Comparison](model_comparison.png)
+
+**Final Model:** Random Forest Classifier
+
+**Accuracy:** **58.77%**
+
+Random Forest outperformed Logistic Regression, KNN and Decision Tree, making it the final model used for deployment.
+
+---
 
 ## 🛠 Tech Stack
 
@@ -110,98 +138,43 @@ Prediction
 - Scikit-Learn
 - Streamlit
 - Joblib
----
-
-## 🚀 How to Run
-
-### 1. Clone the repository
-
-```bash
-git clone https://github.com/Amank0106/ipl-match-analysis.git
-cd ipl-match-analysis
-```
-
-Or download the repository as a ZIP file and extract it.
 
 ---
 
-### 2. Open Anaconda Prompt
+## 📊 Model Details
 
-Navigate to the project folder.
-
-Example:
-
-```bash
-cd path/to/ipl-match-analysis
-```
-
----
-
-### 3. Install the required packages
-
-```bash
-pip install -r requirements.txt
-```
+| Property | Value |
+|----------|-------|
+| Algorithm | Random Forest Classifier |
+| Preprocessing | ColumnTransformer + OneHotEncoder |
+| Train/Test Split | 80/20 |
+| Training Samples | 453 |
+| Testing Samples | 114 |
+| Random State | 42 |
 
 ---
 
-### 4. Launch the application
-
-```bash
-streamlit run app.py
-```
-
-If Streamlit is not recognized, use:
-
-```bash
-python -m streamlit run app.py
-```
-
-The application will automatically open in your default browser (usually at **http://localhost:8501**).
-
-### 4. Retrain the model (Optional)
-
-The trained model (`pipeline.pkl`) is already included in the repository.
-
-If you'd like to retrain it using the dataset:
-
-```bash
-python train_model.py
-```
-
-This will generate a new `pipeline.pkl` file.
-
-##  Model Details
-
-- **Algorithm:** Random Forest Classifier
-- **Preprocessing:** ColumnTransformer + OneHotEncoder
-- **Train/Test Split:** 80/20
-- **Training Samples:** 453
-- **Testing Samples:** 114
-- **Random State:** 42
-
----
-
-## Future Improvements
+## 🚀 Future Improvements
 
 - Hyperparameter tuning using GridSearchCV
 - Team win-rate feature engineering
 - Head-to-head statistics
 - Venue-wise performance
-- Recent form (last 5 matches)
+- Recent form analysis
 - XGBoost / LightGBM comparison
-- Model explainability using SHAP
+- Explainability using SHAP
 
 ---
 
-## Acknowledgements
+## 🙏 Acknowledgements
 
-The **EDA, feature selection, preprocessing pipeline, model training, evaluation, and machine learning workflow** were developed by me.
+The **EDA, feature engineering, preprocessing pipeline, model training, evaluation, and machine learning workflow** were developed by me.
 
 AI assistance was used to:
-- make the Streamlit interface
+
+- Build the Streamlit interface
 - Refactor and organize the project structure
-- Enhance documentation and code readability
+- Improve documentation and code readability
 
 ---
 
