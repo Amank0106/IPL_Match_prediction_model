@@ -1,0 +1,12 @@
+# Core app
+streamlit>=1.58.0
+pandas>=2.2
+
+# Modeling / pipeline (train_model.py + notebook.ipynb)
+scikit-learn>=1.8.0
+joblib>=1.5.3
+numpy>=2.0
+
+# Charts (app.py probability chart + notebook.ipynb EDA plots)
+matplotlib>=3.10
+seaborn>=0.13
