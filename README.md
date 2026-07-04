@@ -103,8 +103,8 @@ Prediction
 ---
 
 ##  Model Comparison
-mentioned in repo
----
+<>
+---![model_comparison](model_comparison.png)
 
 ## 🛠 Tech Stack
 
