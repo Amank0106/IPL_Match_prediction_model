@@ -2,12 +2,6 @@
   <img src="banner.png" alt="IPL Match Winner Predictor">
 </p>
 
-<h1 align="center">🏏 IPL Match Winner Predictor</h1>
-
-<p align="center">
-Predict the winner of an IPL match using Machine Learning and an interactive Streamlit application.
-</p>
-
 
 ## 📌 Project Overview
 
